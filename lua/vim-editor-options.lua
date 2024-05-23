@@ -9,8 +9,8 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 -- Enable relative line numbers
-vim.o.relativenumber = true
-vim.o.number = true
+-- vim.o.relativenumber = true
+-- vim.o.number = true
 
 vim.g.mapleader = " "
 vim.api.nvim_set_keymap('n', '<leader>t', ':tabe<CR>', {})
