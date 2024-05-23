@@ -11,5 +11,9 @@ vim.o.smartcase = true
 -- Enable system clipboard integration
 vim.opt.clipboard = "unnamedplus"
 
+-- Enable relative line numbers
+vim.o.relativenumber = true
+vim.o.number = true
+
 vim.g.mapleader = " "
 vim.api.nvim_set_keymap('n', '<leader>t', ':tabe<CR>', {})
