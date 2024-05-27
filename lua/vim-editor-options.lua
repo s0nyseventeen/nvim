@@ -4,16 +4,15 @@ vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
 vim.cmd('abbr bk breakpoint()')
 
--- Set case-insensitive search
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
--- Enable system clipboard integration
 vim.opt.clipboard = "unnamedplus"
 
--- Enable relative line numbers
 vim.o.relativenumber = true
 vim.o.number = true
 
 vim.g.mapleader = " "
 vim.api.nvim_set_keymap('n', '<leader>t', ':tabe<CR>', {})
+vim.api.nvim_set_keymap('n', '<leader>s', ':%s/', { noremap = true, silent = false })
+vim.api.nvim_set_keymap('n', '<leader>p', '"0p', { noremap = true, silent = true })
