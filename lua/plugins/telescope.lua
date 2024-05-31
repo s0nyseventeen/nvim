@@ -5,6 +5,17 @@ return {
   config = function()
     local telescope = require("telescope").setup {
       defaults = {
+        vimgrep_arguments = {
+          'rg',
+          '--color=never',
+          '--no-heading',
+          '--with-filename',
+          '--line-number',
+          '--column',
+          '--smart-case',
+          '--glob=!package.json',
+          '--glob=!package-lock.json'
+        },
         file_ignore_patterns = {
           '.git',
           '.vscode',
@@ -18,8 +29,6 @@ return {
           'venv',
           'env',
           'Virtual Box VMs',
-          'package.json',
-          'package-lock.json',
         }
       }
     }
