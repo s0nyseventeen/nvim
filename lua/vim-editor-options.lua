@@ -16,7 +16,7 @@ vim.g.mapleader = " "
 vim.api.nvim_set_keymap('n', '<leader>t', ':tabe<CR>', {})
 vim.api.nvim_set_keymap('n', '<leader>s', ':%s/', { noremap = true, silent = false })
 vim.api.nvim_set_keymap('n', '<leader>p', '"0p', { noremap = true, silent = true })
-
+vim.api.nvim_set_keymap('n', '<leader>mp', ':MarkdownPreviewToggle<CR>', {})
 
 vim.api.nvim_create_augroup("TrimWhitespaceOnSave", { clear = true })
 vim.api.nvim_create_autocmd("BufWritePre", {
