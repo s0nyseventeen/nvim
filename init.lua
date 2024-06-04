@@ -12,4 +12,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("vim-editor-options")
-require("lazy").setup('plugins')
+require("lazy").setup("plugins")
