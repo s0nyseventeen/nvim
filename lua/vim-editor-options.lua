@@ -18,6 +18,8 @@ vim.api.nvim_set_keymap('n', '<leader>s', ':s/', { noremap = true, silent = fals
 vim.api.nvim_set_keymap('n', '<leader>mp', ':MarkdownPreviewToggle<CR>', {})
 
 -- Keybindings to switch buffers
-vim.api.nvim_set_keymap('n', '[b', ':bprevious<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', ']b', ':bnext<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+  'n', '<leader>[', ':bprevious<CR>', { noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap('n', '<leader>]', ':bnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>x', ':bd<CR>', { noremap = true, silent = true })
