@@ -26,6 +26,7 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap('n', '<leader>]', ':bnext<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>x', ':bd<CR>', { noremap = true, silent = true })
 
--- Map <F4> to :q in normal mode
 vim.api.nvim_set_keymap('n', '<F4>', ':q<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<F2>', ':w<CR>', { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap('i', '<F2>', '<Esc>:w<CR>', { noremap = true, silent = true })
