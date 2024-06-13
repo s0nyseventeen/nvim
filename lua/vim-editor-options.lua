@@ -30,3 +30,4 @@ vim.api.nvim_set_keymap('n', '<F4>', ':q<CR>', { noremap = true, silent = true }
 vim.api.nvim_set_keymap('n', '<F2>', ':w<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('i', '<F2>', '<Esc>:w<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-a>', 'ggVG', { noremap = true, silent = true })
