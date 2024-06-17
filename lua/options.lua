@@ -8,12 +8,12 @@ vim.o.tabstop = 2
 vim.o.softtabstop = 2
 vim.o.shiftwidth = 2
 
+vim.o.autoread = true
+
 vim.cmd('abbr bk breakpoint()')
 
 vim.o.ignorecase = true
 vim.o.smartcase = true
-
-vim.o.autoread = true
 
 vim.o.clipboard = "unnamedplus"
 vim.o.termguicolors = true
