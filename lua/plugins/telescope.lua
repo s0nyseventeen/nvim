@@ -36,8 +36,6 @@ return {
         ".pytest_cache",
         "__pycache__",
         "node_modules",
-        "venv",
-        "env",
         "Virtual Box VMs",
         "%.png",
         "%.jpg",
