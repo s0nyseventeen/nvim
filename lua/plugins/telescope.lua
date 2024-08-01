@@ -36,7 +36,7 @@ return {
         ".pytest_cache",
         "__pycache__",
         "node_modules",
-        "Virtual Box VMs",
+        "VirtualBox VMs",
         "%.png",
         "%.jpg",
         "%.jpeg",
