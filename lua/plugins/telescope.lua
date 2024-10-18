@@ -46,6 +46,7 @@ return {
         ".vscode",
         "__pycache__",
         "node_modules",
+        "EPRDCM_206_77_0_1549",
         "VirtualBox VMs",
         "%.png",
         "%.jpg",
