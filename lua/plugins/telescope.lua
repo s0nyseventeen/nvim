@@ -51,6 +51,8 @@ return {
         "%.png",
         "%.jpg",
         "%.jpeg",
+        "%.docx",
+	"%.xlsx"
       },
     },
   },
