@@ -52,7 +52,8 @@ return {
         "%.jpg",
         "%.jpeg",
         "%.docx",
-        "%.xlsx"
+        "%.xlsx",
+        "%.sln"
       },
     },
   },
