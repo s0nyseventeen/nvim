@@ -7,9 +7,8 @@ vim.keymap.set({ "i", "x", "n", "s" }, "<F2>", "<cmd>w<cr><esc>", { desc = "Save
 
 vim.keymap.set("n", "<C-a>", "ggVG", { noremap = true, silent = true })
 
-vim.keymap.set(
-  "n",
-  "<leader>mp",
-  ":MarkdownPreviewToggle<CR>",
-  { noremap = true, silent = true, desc = "Markdown Preview" }
-)
+vim.keymap.set("n", "<leader>j", "j$", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>k", "k$", { noremap = true, silent = true })
+
+vim.keymap.set("i", "<leader>\\", "breakpoint()", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>\\", "obreakpoint()<Esc>", { noremap = true, silent = true })
