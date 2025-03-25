@@ -3,4 +3,3 @@
 -- Add any additional options here
 
 LazyVim.terminal.setup("pwsh")
-
