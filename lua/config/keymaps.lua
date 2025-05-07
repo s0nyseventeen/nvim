@@ -12,3 +12,9 @@ vim.keymap.set("n", "<leader>k", "k$", { noremap = true, silent = true })
 
 vim.keymap.set("i", "<leader>\\", "breakpoint()", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>\\", "obreakpoint()<Esc>", { noremap = true, silent = true })
+
+vim.keymap.set('n', "<leader>]", function()
+  local dirpath = vim.fn.expand('%:p:h')
+  vim.fn.setreg('+', dirpath)
+  vim.notify('Copied directory: ' .. dirpath)
+end, {desc='Copy directory path to the clipboard'})
