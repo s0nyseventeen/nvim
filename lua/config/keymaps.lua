@@ -10,14 +10,19 @@ vim.keymap.set("n", "<C-a>", "ggVG", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>j", "j$", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>k", "k$", { noremap = true, silent = true })
 
-vim.keymap.set("i", "<leader>\\", "breakpoint()", { noremap = true, silent = true })
-vim.keymap.set("n", "<leader>\\", "obreakpoint()<Esc>", { noremap = true, silent = true })
+vim.keymap.set("i", "<F9>", "breakpoint()", { noremap = true, silent = true })
+vim.keymap.set("n", "<F9>", "obreakpoint()<Esc>", { noremap = true, silent = true })
 
-vim.keymap.set('n', "<leader>]", function()
-  local dirpath = vim.fn.expand('%:p:h')
-  vim.fn.setreg('+', dirpath)
-  vim.notify('Copied directory: ' .. dirpath)
-end, {desc='Copy directory path to the clipboard'})
+vim.keymap.set("i", "<C-d>", "<Esc>ddi", { noremap = true, silent = true })
+
+vim.keymap.set("i", "<C-j>", "<Esc>o", { noremap = true, silent = true })
+vim.keymap.set("i", "<C-J>", "<Esc>O", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>]", function()
+  local dirpath = vim.fn.expand("%:p:h")
+  vim.fn.setreg("+", dirpath)
+  vim.notify("Copied directory: " .. dirpath)
+end, { desc = "Copy directory path to the clipboard" })
 
 vim.keymap.set("n", "<leader>[", function()
   local filepath = vim.fn.expand("%:p")
