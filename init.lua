@@ -4,7 +4,7 @@ vim.keymap.set("n", "<leader>j", "j$", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>k", "k$", { noremap = true, silent = true })
 
 -- open config
-vim.cmd('nmap <leader>c :e ~/.config/nvim/init.lua<cr>')
+vim.cmd('nmap <leader>c :e ~/AppData/Local/nvim/init.lua<cr>')
 
 -- paste without overwriting
 vim.keymap.set('v', 'p', 'P')
