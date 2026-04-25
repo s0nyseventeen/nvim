@@ -2,6 +2,7 @@
 vim.g.mapleader = ' '
 vim.keymap.set("n", "<leader>j", "j$", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>k", "k$", { noremap = true, silent = true })
+vim.keymap.set("n", "<leader>d", "dd", { noremap = true, silent = true })
 
 vim.keymap.set("n", "<leader>\\", "obreakpoint()<Esc>", { noremap = true, silent = true })
 
