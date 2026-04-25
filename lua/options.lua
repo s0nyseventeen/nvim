@@ -1,24 +1,10 @@
-﻿local opt = vim.opt
-
-opt.tabstop = 4
-opt.softtabstop = 4
-opt.shiftwidth = 4
-opt.expandtab = true
-opt.autoindent = true
-opt.cursorline = true
-opt.ignorecase = true
-opt.smartcase = true
+﻿vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 if vim.g.vscode then
-	vim.keymap.set("n", "<leader>\\", "obreakpoint()<Esc>", { noremap = true, silent = true })
-
-	-- open config
-	vim.cmd('nmap <leader>c :e ~/.config/nvim/init.lua<cr>')
-
 	-- paste without overwriting
 	vim.keymap.set('v', 'p', 'P')
 
-	-- clear search highlighting
 	vim.keymap.set('n', '<Esc>', ':nohlsearch<cr>')
 
 	-- sync system clipboard
