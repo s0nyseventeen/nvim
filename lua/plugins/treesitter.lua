@@ -47,6 +47,15 @@ return {
       vim.keymap.set({ "x", "o" }, "im", function()
         select.select_textobject("@call.inner", "textobjects")
       end)
+
+      vim.keymap.set({ "x", "o" }, "ab", function()
+        select.select_textobject("@block.outer", "textobjects")
+      end)
+      vim.keymap.set({ "x", "o" }, "ib", function()
+        select.select_textobject("@block.inner", "textobjects")
+      end)
+
+      -- 4:28 https://www.youtube.com/watch?v=UpaGkOKWfmA&list=PLXDouhCU5r6qzUHiOYTCGf1QATlv3eC6F&index=2
     end,
   },
   { "nvim-treesitter/nvim-treesitter-textobjects" },
