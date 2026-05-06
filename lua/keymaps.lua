@@ -1,7 +1,7 @@
 -- <leader> key
 vim.g.mapleader = ' '
 
-vim.cmd('nmap <leader>c :e ~/AppData/Local/nvim/init.lua<cr>')
+vim.cmd('nmap <leader>c :e ~/AppData/Local/nvim/lua/plugins/treesitter.lua<cr>')
 
 vim.keymap.set("n", "<leader>j", "j$", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>k", "k$", { noremap = true, silent = true })
