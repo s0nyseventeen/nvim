@@ -55,7 +55,13 @@ return {
         select.select_textobject("@block.inner", "textobjects")
       end)
 
-      -- 4:28 https://www.youtube.com/watch?v=UpaGkOKWfmA&list=PLXDouhCU5r6qzUHiOYTCGf1QATlv3eC6F&index=2
+      vim.keymap.set({ "x", "o" }, "aa", function()
+        select.select_textobject("@parameter.outer", "textobjects")
+      end)
+      vim.keymap.set({ "x", "o" }, "ia", function()
+        select.select_textobject("@parameter.inner", "textobjects")
+      end)
+      -- 5:18 https://www.youtube.com/watch?v=UpaGkOKWfmA&list=PLXDouhCU5r6qzUHiOYTCGf1QATlv3eC6F&index=2
     end,
   },
   { "nvim-treesitter/nvim-treesitter-textobjects" },
