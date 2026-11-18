@@ -10,7 +10,14 @@ return {
       'vim',
       'vimdoc',
       'markdown',
-      'python'
+      'python',
+      'typescript',
+      'javascript',
+      'tsx',
+      'html',
+      'css',
+      'c',
+      'cpp'
       },
       highlight = { enable = true }
     })
